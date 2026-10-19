@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: integratrace
+      POSTGRES_USER: integratrace
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-integratrace_local_only}
+    ports: ["5433:5432"]
+    volumes: ["integratrace_data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U integratrace -d integratrace"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  app:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/integratrace
+      SPRING_DATASOURCE_USERNAME: integratrace
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-integratrace_local_only}
+    ports: ["8080:8080"]
+    restart: unless-stopped
+volumes:
+  integratrace_data:
