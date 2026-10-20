@@ -6,16 +6,16 @@
 
 Monitore endpoints HTTP, execute verificações sob demanda e acompanhe o histórico de disponibilidade, status e latência em uma interface centralizada.
 
-!\[Java](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk\&logoColor=white)
-!\[Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.5-6DB33F?logo=springboot\&logoColor=white)
-!\[PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql\&logoColor=white)
-!\[Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker\&logoColor=white)
-!\[Maven](https://img.shields.io/badge/Maven-Build-C71A36?logo=apachemaven\&logoColor=white)
-!\[Status](https://img.shields.io/badge/Status-MVP%20de%20portf%C3%B3lio-blue)
+![Java](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk\&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.5-6DB33F?logo=springboot\&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker\&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-Build-C71A36?logo=apachemaven\&logoColor=white)
+![Status](https://img.shields.io/badge/Status-MVP%20de%20portf%C3%B3lio-blue)
 
 </div>
 
-\---
+---
 
 ## 📌 Sobre o projeto
 
@@ -23,7 +23,7 @@ O **IntegraTrace** é uma aplicação web para centralizar o cadastro e o diagn�
 
 O sistema reúne informações como código HTTP recebido, resultado da verificação, tempo de resposta e horário da execução. O dashboard apresenta uma visão resumida das integrações e das verificações registradas.
 
-> \*\*Escopo atual:\*\* MVP de portfólio executado localmente. As verificações são acionadas sob demanda; o projeto ainda não implementa agendamento automático de checks nem autenticação de usuários.
+> **Escopo atual:** MVP de portfólio executado localmente. As verificações são acionadas sob demanda; o projeto ainda não implementa agendamento automático de checks nem autenticação de usuários.
 
 ## 🎯 Objetivos
 
@@ -285,15 +285,15 @@ Guarde o arquivo de backup em local seguro e teste periodicamente a restauraçã
 
 ## 🗺️ Roadmap
 
-* \[ ] Agendamento automático de verificações.
-* \[ ] Autenticação e controle de acesso por usuário.
-* \[ ] Allowlist de destinos e proteção contra SSRF.
-* \[ ] Alertas para falhas consecutivas e recuperação do serviço.
-* \[ ] Filtros por período e gráficos históricos de latência.
-* \[ ] Paginação para históricos e listagens maiores.
-* \[ ] Migrações de banco versionadas.
-* \[ ] Pipeline CI para executar os testes automaticamente.
-* \[ ] Melhorar a cobertura de testes de serviço, histórico e falhas HTTP.
+* [ ] Agendamento automático de verificações.
+* [ ] Autenticação e controle de acesso por usuário.
+* [ ] Allowlist de destinos e proteção contra SSRF.
+* [ ] Alertas para falhas consecutivas e recuperação do serviço.
+* [ ] Filtros por período e gráficos históricos de latência.
+* [ ] Paginação para históricos e listagens maiores.
+* [ ] Migrações de banco versionadas.
+* [ ] Pipeline CI para executar os testes automaticamente.
+* [ ] Melhorar a cobertura de testes de serviço, histórico e falhas HTTP.
 
 ## 👨‍💻 Autor
 
@@ -303,13 +303,6 @@ Projeto desenvolvido com foco em diagnóstico de integrações HTTP, monitoramen
 
 O IntegraTrace centraliza o cadastro de APIs, a execução de verificações e o histórico de resultados em uma interface única, ajudando a identificar respostas inesperadas e organizar informações técnicas para análise e troubleshooting.
 
-
-
-\---
-
 ## ⭐ Apoie o projeto
 
-
-
 Se este projeto foi útil para você, considere deixar uma ⭐ no repositório. 
-
